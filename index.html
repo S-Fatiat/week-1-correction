@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<style>
+*{padding:2px;
+margin:5px;}
+label
+{
+  height:1px;
+  padding:5px;
+  display: inline-block;
+  width:80px;
+}
+p1{
+  height:1px;
+  padding:5px;
+  width:20px;
+}
+</style>
+<title>Document</title>
+</head>
+<body>
+   <form><legend><center>
+          Bio Data Form
+        </center></legend>
+        <label for="demo">Name:</label> 
+        <input type="text" id="demo" name="letter" required/><br/>
+        <label for="demo">Email Address:</label> 
+        <input type="email" id="name" required/><br/>
+<label for="demo">Phone Number:</label> 
+        <input type="number" id="demo" name="number" required/><br/>
+       <p1>Gender:<input type="radio" name="gender" value="Male" id="Male"/>
+    <label for="Male">Male</label>
+    <input type="radio" name="gender" value="Female" id="Female" required/>
+    <label for="Female">Female</label>
+    </p1> <br/>
+        <label for="demo">Password:</label> 
+        <input type="password" id="demo" required/><br/>
+      <button type="button" onclick="getValue()">Submit</button>
+  <script>
+    function getValue(){
+      var val=document.getElementById("name").value;
+      alert ("Submission Successful" + val)
+    }
+    </form> 
+</body>
+</html>
